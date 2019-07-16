@@ -1,0 +1,2 @@
+class SignificantOther < ApplicationRecord
+end

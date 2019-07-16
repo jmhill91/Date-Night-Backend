@@ -1,0 +1,2 @@
+class Rendezvou < ApplicationRecord
+end
