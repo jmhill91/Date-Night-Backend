@@ -1,0 +1,2 @@
+class RendezvouController < ApplicationController
+end

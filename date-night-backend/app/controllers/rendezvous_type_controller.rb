@@ -1,0 +1,2 @@
+class RendezvousTypeController < ApplicationController
+end

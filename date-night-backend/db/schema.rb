@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_16_151133) do
+ActiveRecord::Schema.define(version: 2019_07_17_154503) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2019_07_16_151133) do
     t.integer "date_type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "babysitter"
   end
 
   create_table "rendezvous_types", force: :cascade do |t|
@@ -39,9 +40,10 @@ ActiveRecord::Schema.define(version: 2019_07_16_151133) do
   end
 
   create_table "significant_others", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "follower_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "followee_id"
   end
 
   create_table "users", force: :cascade do |t|

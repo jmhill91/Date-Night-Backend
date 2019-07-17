@@ -1,0 +1,2 @@
+class AttireController < ApplicationController
+end
