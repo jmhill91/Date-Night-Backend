@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
 
   def create
     user = User.create(user_params)
@@ -7,6 +7,11 @@ class UserController < ApplicationController
     else
       render json: { errors: user.errors.full_messages }
     end
+  end
+
+  def index
+    users = User.all
+    render json: users
   end
 
   def profile

@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
   end
 
   def secret
-   Rails.application.creditials.password_secret
+   Rails.application.credentials.password_secret
   end
 
   def token

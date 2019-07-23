@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :user, only: [:index, :show, :update]
-  resources :rendezvou, only: [:index, :show]
+  resources :users, only: [:index, :show, :update]
+  resources :rendezvou, only: [:index, :show, :create]
   resources :attire, only: [:index, :show]
   resources :rendezvous_type, only: [:index, :show]
   post "/login", to: "auth#login"

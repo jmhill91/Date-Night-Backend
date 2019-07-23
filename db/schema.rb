@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_17_154503) do
+ActiveRecord::Schema.define(version: 2019_07_22_212952) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,14 +23,14 @@ ActiveRecord::Schema.define(version: 2019_07_17_154503) do
 
   create_table "rendezvous", force: :cascade do |t|
     t.datetime "date"
-    t.integer "time"
     t.string "location"
     t.integer "user_id"
-    t.integer "clothing_options_id"
-    t.integer "date_type_id"
+    t.integer "attire_id"
+    t.integer "rendezvous_type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "babysitter"
+    t.datetime "time"
   end
 
   create_table "rendezvous_types", force: :cascade do |t|
@@ -50,9 +50,9 @@ ActiveRecord::Schema.define(version: 2019_07_17_154503) do
     t.string "name"
     t.string "username"
     t.string "password_digest"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "email"
-    t.integer "significant_other_phone"
+    t.string "significant_other_phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
