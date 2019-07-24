@@ -11,11 +11,14 @@ class UsersController < ApplicationController
 
   def index
     users = User.all
-    render json: users
+    options = {
+      include: [:rendezvous, :attire, :rendezvous_type]
+    }
+    render json: UserSerializer.new(users)
   end
 
   def profile
-    render json: current_user
+    render json: UserSerializer.new(current_user)
   end
 
   private

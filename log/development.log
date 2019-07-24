@@ -4958,3 +4958,865 @@ Processing by RendezvouController#index as HTML
 Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/profile" for ::1 at 2019-07-24 10:24:47 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:24:47 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:24:47 -0400
+  [1m[35m (594.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (595.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (594.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AttireController#index as */*
+Processing by UsersController#profile as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mAttire Load (1160.1ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+  [1m[36mRendezvousType Load (1232.9ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 3482ms (Views: 208.9ms | ActiveRecord: 2251.2ms)
+
+
+Completed 200 OK in 3492ms (Views: 521.6ms | ActiveRecord: 1948.4ms)
+
+
+  [1m[36mUser Load (261.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 3987ms (Views: 0.5ms | ActiveRecord: 1574.9ms)
+
+
+Started GET "/attire" for ::1 at 2019-07-24 10:32:05 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:32:06 -0400
+Processing by RendezvousTypeController#index as */*
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (1.1ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+  [1m[36mRendezvousType Load (2.2ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.1ms)
+
+
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2019-07-24 10:32:09 -0400
+Started GET "/profile" for ::1 at 2019-07-24 10:32:16 -0400
+Started GET "/" for ::1 at 2019-07-24 10:32:16 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.7ms)
+
+
+Processing by Rails::WelcomeController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendering /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (6.4ms)
+  Rendered /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 493ms (Views: 428.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 456ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-07-24 10:32:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/rendezvou" for ::1 at 2019-07-24 10:32:24 -0400
+Processing by RendezvouController#index as HTML
+  [1m[36mRendezvou Load (259.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 808ms (Views: 14.0ms | ActiveRecord: 273.0ms)
+
+
+Started GET "/rendezvou" for ::1 at 2019-07-24 10:32:29 -0400
+Processing by RendezvouController#index as HTML
+  [1m[36mRendezvou Load (0.7ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:48:35 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:48:35 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:48:35 -0400
+Processing by UsersController#profile as */*
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (1.4ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 12ms (Views: 1.4ms | ActiveRecord: 4.8ms)
+
+
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvousType Load (2.5ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:49:55 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:49:55 -0400
+Started GET "/profile" for ::1 at 2019-07-24 10:49:55 -0400
+Processing by AttireController#index as */*
+Processing by UsersController#profile as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mAttire Load (12.8ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 17ms (Views: 3.9ms | ActiveRecord: 12.8ms)
+
+
+  [1m[36mRendezvousType Load (28.3ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 62ms (Views: 33.5ms | ActiveRecord: 28.3ms)
+
+
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 80ms (Views: 0.8ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:50:30 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:50:30 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:50:30 -0400
+Processing by UsersController#profile as */*
+Processing by AttireController#index as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mAttire Load (2.3ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 8.0ms)
+
+
+  [1m[36mRendezvousType Load (7.1ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 37ms (Views: 29.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:51:32 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:51:32 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:51:32 -0400
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvousType Load (0.9ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.9ms)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 5.6ms)
+
+
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (1.1ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:51:45 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:51:45 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:51:45 -0400
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (1.9ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.9ms)
+
+
+Processing by UsersController#profile as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mUser Load (98.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 102ms (Views: 0.6ms | ActiveRecord: 98.5ms)
+
+
+  [1m[36mRendezvousType Load (101.4ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 145ms (Views: 42.9ms | ActiveRecord: 101.4ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:52:01 -0400
+Started GET "/profile" for ::1 at 2019-07-24 10:52:01 -0400
+Started GET "/attire" for ::1 at 2019-07-24 10:52:01 -0400
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvousType Load (6.8ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+Processing by UsersController#profile as */*
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Processing by AttireController#index as */*
+Completed 200 OK in 51ms (Views: 43.5ms | ActiveRecord: 6.8ms)
+
+
+  [1m[36mUser Load (40.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAttire Load (1.7ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/application_controller.rb:23
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 45ms (Views: 0.8ms | ActiveRecord: 40.6ms)
+
+
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:55:58 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/attire" for ::1 at 2019-07-24 10:55:58 -0400
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (0.9ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:55:58 -0400
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvousType Load (1.8ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 10:56:12 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 10:56:12 -0400
+Processing by UsersController#profile as */*
+Started GET "/attire" for ::1 at 2019-07-24 10:56:12 -0400
+Processing by RendezvousTypeController#index as */*
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mRendezvousType Load (2.5ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 2.5ms)
+
+
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (0.7ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:45:29 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:45:29 -0400
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:45:29 -0400
+Started GET "/profile" for ::1 at 2019-07-24 13:45:31 -0400
+Processing by AttireController#index as */*
+Processing by RendezvouController#index as */*
+Processing by RendezvousTypeController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (94.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 105ms (Views: 3.0ms | ActiveRecord: 94.9ms)
+
+
+  [1m[36mRendezvou Load (473.7ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 478ms (Views: 3.8ms | ActiveRecord: 473.7ms)
+
+
+  [1m[36mAttire Load (526.7ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 537ms (Views: 7.9ms | ActiveRecord: 526.7ms)
+
+
+  [1m[36mRendezvousType Load (1708.6ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 1735ms (Views: 26.0ms | ActiveRecord: 1708.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 13:46:13 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:46:13 -0400
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:46:13 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:46:13 -0400
+Processing by UsersController#profile as */*
+Processing by RendezvouController#index as */*
+Processing by AttireController#index as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvou Load (6.7ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 11ms (Views: 3.4ms | ActiveRecord: 6.7ms)
+
+
+  [1m[36mAttire Load (8.2ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 8.2ms)
+
+
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 14.9ms)
+
+
+  [1m[36mRendezvousType Load (17.3ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 110ms (Views: 91.8ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:46:40 -0400
+Started GET "/profile" for ::1 at 2019-07-24 13:46:40 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:46:40 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:46:40 -0400
+Processing by RendezvouController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mRendezvou Load (4.5ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.5ms)
+
+
+Processing by AttireController#index as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 16.7ms)
+
+
+  [1m[36mAttire Load (13.9ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 20ms (Views: 5.3ms | ActiveRecord: 13.9ms)
+
+
+  [1m[36mRendezvousType Load (18.7ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 50ms (Views: 30.8ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:50:22 -0400
+Started GET "/profile" for ::1 at 2019-07-24 13:50:22 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:50:23 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:50:23 -0400
+Processing by RendezvouController#index as */*
+Processing by UsersController#profile as */*
+Processing by AttireController#index as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvou Load (11.2ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAttire Load (3.4ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+  ↳ app/controllers/rendezvou_controller.rb:15
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 3.4ms)
+
+
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 6.9ms)
+
+
+Completed 200 OK in 21ms (Views: 9.3ms | ActiveRecord: 11.2ms)
+
+
+  [1m[36mRendezvousType Load (9.3ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 61ms (Views: 51.4ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 13:51:34 -0400
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:51:34 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:51:34 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:51:34 -0400
+Processing by RendezvouController#index as */*
+Processing by UsersController#profile as */*
+Processing by AttireController#index as */*
+  [1m[36mRendezvou Load (15.0ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 19ms (Views: 3.2ms | ActiveRecord: 15.0ms)
+
+
+  [1m[36mAttire Load (19.0ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 24ms (Views: 5.0ms | ActiveRecord: 19.0ms)
+
+
+Processing by RendezvousTypeController#index as */*
+  [1m[36mRendezvousType Load (69.6ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+  [1m[36mUser Load (107.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 109ms (Views: 38.8ms | ActiveRecord: 69.6ms)
+
+
+Completed 200 OK in 155ms (Views: 16.5ms | ActiveRecord: 120.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 13:52:08 -0400
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:52:08 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:52:08 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:52:08 -0400
+Processing by RendezvousTypeController#index as */*
+Processing by AttireController#index as */*
+Processing by UsersController#profile as */*
+Processing by RendezvouController#index as */*
+  [1m[36mRendezvousType Load (4.6ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  [1m[36mAttire Load (3.1ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 40ms (Views: 35.4ms | ActiveRecord: 4.6ms)
+
+
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 3.1ms)
+
+
+  [1m[36mUser Load (120.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 123ms (Views: 0.6ms | ActiveRecord: 120.6ms)
+
+
+  [1m[36mRendezvou Load (121.8ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 125ms (Views: 3.3ms | ActiveRecord: 121.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 13:52:16 -0400
+Started GET "/rendezvou" for ::1 at 2019-07-24 13:52:16 -0400
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:52:16 -0400
+Processing by UsersController#profile as */*
+Processing by RendezvouController#index as */*
+Processing by RendezvousTypeController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mRendezvou Load (2.0ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous"[0m
+  ↳ app/controllers/application_controller.rb:23
+  ↳ app/controllers/rendezvou_controller.rb:15
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 3.1ms)
+
+
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mRendezvousType Load (6.1ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 31ms (Views: 24.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/attire" for ::1 at 2019-07-24 13:52:16 -0400
+Processing by AttireController#index as */*
+  [1m[36mAttire Load (0.6ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:58:53 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:58:53 -0400
+Started GET "/profile" for ::1 at 2019-07-24 13:58:56 -0400
+Processing by RendezvousTypeController#index as */*
+Processing by AttireController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mAttire Load (2.1ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mRendezvousType Load (8.1ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 67ms (Views: 57.9ms | ActiveRecord: 8.1ms)
+
+
+  [1m[36mUser Load (58.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 67ms (Views: 0.7ms | ActiveRecord: 58.7ms)
+
+
+Started GET "/rendezvous_type" for ::1 at 2019-07-24 13:59:11 -0400
+Started GET "/attire" for ::1 at 2019-07-24 13:59:11 -0400
+Processing by RendezvousTypeController#index as */*
+Processing by AttireController#index as */*
+  [1m[36mRendezvousType Load (2.8ms)[0m  [1m[34mSELECT "rendezvous_types".* FROM "rendezvous_types"[0m
+  ↳ app/controllers/rendezvous_type_controller.rb:6
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 2.8ms)
+
+
+  [1m[36mAttire Load (28.8ms)[0m  [1m[34mSELECT "attires".* FROM "attires"[0m
+  ↳ app/controllers/attire_controller.rb:5
+Completed 200 OK in 37ms (Views: 7.6ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 13:59:16 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 14:18:16 -0400
+Processing by UsersController#profile as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:19:in `decoded_token'
+app/controllers/application_controller.rb:23:in `current_user'
+app/controllers/users_controller.rb:18:in `profile'
+Started GET "/users" for ::1 at 2019-07-24 14:18:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:22:54 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:23:41 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:27:56 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:32:18 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:32:35 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:14:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:34:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:15
+Completed 200 OK in 614ms (Views: 22.1ms | ActiveRecord: 585.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:35:04 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:15:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:36:40 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 5.5ms)
+
+
+  
+NoMethodError (undefined method `accepts_nested_attributes' for #<Class:0x00007f8691a2eb70>
+Did you mean?  accepts_nested_attributes_for):
+  
+app/models/user.rb:12:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:13:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:37:03 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:15:in `index'
+Started GET "/user" for ::1 at 2019-07-24 14:38:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-07-24 14:38:14 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:15:in `index'
+Started GET "/users/1" for ::1 at 2019-07-24 14:38:20 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-07-24 14:38:25 -0400
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant UsersController::UserSerializer):
+  
+app/controllers/users_controller.rb:15:in `index'
+Started GET "/users" for ::1 at 2019-07-24 14:44:40 -0400
+  [1m[35m (134.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (469.1ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15
+Completed 200 OK in 1593ms (Views: 947.2ms | ActiveRecord: 491.1ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:44:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:15
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:46:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 268ms (Views: 28.2ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:48:18 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/johnhill/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (152.6ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (352.1ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 1088ms (Views: 410.9ms | ActiveRecord: 560.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:50:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "attires"."id" FROM "attires" INNER JOIN "rendezvous" ON "attires"."id" = "rendezvous"."attire_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "rendezvous_types"."id" FROM "rendezvous_types" INNER JOIN "rendezvous" ON "rendezvous_types"."id" = "rendezvous"."rendezvous_type_id" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 245ms (Views: 109.2ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:51:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "rendezvous"."id" FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 107ms (Views: 53.1ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:52:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.3ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 549ms (Views: 332.9ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:53:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.5ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:54:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.3ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.2ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 395ms (Views: 59.2ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/users" for ::1 at 2019-07-24 14:54:31 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.5ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.4ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mRendezvou Load (0.3ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:17
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-07-24 14:55:57 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23
+  [1m[36mRendezvou Load (0.3ms)[0m  [1m[34mSELECT "rendezvous".* FROM "rendezvous" WHERE "rendezvous"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:21
+Completed 200 OK in 319ms (Views: 42.7ms | ActiveRecord: 14.2ms)
+
+
