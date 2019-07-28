@@ -15,6 +15,22 @@ class RendezvouController < ApplicationController
     render json: rendezvous
   end
 
+  def show
+    rendezvou = Rendezvou.find_by(id: params[:id])
+    render json: rendezvou
+  end
+
+  def update
+    rendezvou = Rendezvou.find_by(id: params[:id])
+    rendezvou.update(rendezvou_params)
+    render json: rendezvou
+  end
+
+  def destroy
+    rendezvou = Rendezvou.find_by(id: params[:id])
+    rendezvou.destroy
+  end
+
   private
 
   def rendezvou_params
