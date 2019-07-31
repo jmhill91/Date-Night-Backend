@@ -3,7 +3,12 @@ class RendezvouController < ApplicationController
   def create
     rendezvous = Rendezvou.create(rendezvou_params)
     if rendezvous.valid?
-      render json: rendezvous
+      if params[:surprise] === false
+        send_message("+1#{params[:soPhone]}", params[:message])
+        render json: rendezvous
+      else
+        render json: rendezvous
+      end
     else
       render json: { errors: rendezvous.errors.full_messages }
     end

@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     user.update(user_params)
     render json: UserSerializer.new(user)
   end
-
+  
   private
 
   def user_params
